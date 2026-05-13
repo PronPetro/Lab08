@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Мій сайт (брехня)</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="banner">
+            Мої
+            <a href="PronLab08-6.html"> гіперпосилання </a>
+        </div>
+        <div class="main-content">
+            <h1>Про себе</h1>
+            <p>Після універу я сплю</p>
+            <p>
+                Я полюбляю <b>TEAM FORTRESS 2</b>, <b>Garry's mod</b>,
+                <b>TETRIS</b> та <b>Quake</b>
+            </p>
+            <h1>Моє хобі</h1>
+            <h2>Музика</h2>
+            <p>
+                Я фанат
+                <i>
+                    System of a Down, Boards of Canada, Aphex Twin, The Teeth,
+                    Dismemberment Plan, Radiohead та Elliott Smith
+                </i>
+            </p>
+
+            <h2>Програмування</h2>
+            <pre>
+d = opendir(rootDir);
+int files = 0;
+
+if (!d) {
+    printf(KBRED KBLK NSTR, "  Directory not found ");
+    remove_last_folder(rootDir);
+
+    d = opendir(rootDir);
+    printf(KBBLK KWHT);
+}
+
+printf(KBLU NSTR, rootDir);
+
+while ((dir = readdir(d)) != NULL) {
+    if (strcmp(dir->d_name, "..") != 0 && strcmp(dir->d_name, ".") != 0) {
+        files += 1;
+        printf(KWHT "├─" NSTR, dir->d_name);
+    }
+}
+closedir(d);
+            </pre>
+
+            <p align="right">Студент групи 102-Тк Пронь П.В.</p>
+            <font color="#181B1F"
+                >СПОНСІРАВОНО НАЦІОНАЛІСТИЧНОЮ КОМ ПАРТІЄЮ ІСРАЛЯ</font
+            >
+        </div>
+    </body>
+</html>
