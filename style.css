@@ -2,31 +2,43 @@
 
 :root {
     --accent: #e2b714;
+    --accent-contrast: #323437;
     --background: #181b1f;
     --foreground: #e1eaf2;
+    --font-medium: 400;
+    --font-bold: 600;
 }
 
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 14pt;
-    margin: 0;
 
     background-color: var(--background);
     color: var(--foreground);
+    margin: 0;
+}
+
+h1 {
+    color: var(--accent);
 }
 
 .banner {
-    font-weight: 400;
+    font-weight: var(--font-medium);
     background-color: var(--accent);
-    color: #323437;
+    color: var(--accent-contrast);
     padding: 0.7rem;
     margin: 0;
 }
 
 .banner a:visited,
 .banner a:link {
-    color: #323437;
+    color: var(--accent-contrast);
+}
+
+a:visited,
+a:link {
+    color: var(--accent);
 }
 
 .main-content {
@@ -34,16 +46,11 @@ body {
 }
 
 dt {
-    font-weight: 500;
+    font-weight: var(--font-bold);
     margin-top: 1.3rem;
 }
 
 dt img {
     height: 2.5em;
     margin: 0.5rem;
-}
-
-a:visited,
-a:link {
-    color: var(--accent);
 }
