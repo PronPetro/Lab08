@@ -35,6 +35,12 @@ body {
 
 dt {
     font-weight: 500;
+    margin-top: 1.3rem;
+}
+
+dt img {
+    height: 2.5em;
+    margin: 0.5rem;
 }
 
 a:visited,
